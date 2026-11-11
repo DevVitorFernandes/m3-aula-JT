@@ -57,6 +57,6 @@ export class Comanda {
 
     fechar(): string {
         this.aberta = false;
-        return "Mesa " + this.mesa + " - R$ " + this.total().toFixed(2)
+        return "Mesa " + this.mesa + " - R$ " + (this.total() / 100).toFixed(2)
     }
 }
